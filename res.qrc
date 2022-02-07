@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="img">
+    <file>favicon_small.ico</file>
+  </qresource>
+  <qresource prefix="qm">
+    <file>static/qm/qt_zh_CN.qm</file>
+  </qresource>
+</RCC>

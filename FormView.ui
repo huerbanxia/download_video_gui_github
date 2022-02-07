@@ -1,0 +1,1280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dialog</class>
+ <widget class="QDialog" name="dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1126</width>
+    <height>826</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>页面解析</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">MainForm{
+background-color: #FFFFFF;
+}
+QDialog{
+background-color: #FFFFFF;
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="main_layout">
+     <property name="styleSheet">
+      <string notr="true">#main_layout {
+border : 0}</string>
+     </property>
+     <layout class="QVBoxLayout" name="main">
+      <item>
+       <widget class="QGroupBox" name="up">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>240</height>
+         </size>
+        </property>
+        <layout class="QHBoxLayout" name="up_layout">
+         <item>
+          <widget class="QGroupBox" name="groupBox">
+           <property name="title">
+            <string>配置</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_2">
+            <item row="3" column="1">
+             <widget class="QLabel" name="label_2">
+              <property name="styleSheet">
+               <string notr="true">QLabel {
+font: 15pt &quot;楷体&quot;;
+}</string>
+              </property>
+              <property name="text">
+               <string>代理地址</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="1">
+             <widget class="QLabel" name="label_4">
+              <property name="styleSheet">
+               <string notr="true">QLabel {
+font: 15pt &quot;楷体&quot;;
+}</string>
+              </property>
+              <property name="text">
+               <string>存储位置</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="10">
+             <widget class="QPushButton" name="pushButton_2">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {font: 12pt &quot;楷体&quot;;
+border-radius:4px;
+/*border: 1px solid gray;*/
+/* 边框颜色 */  
+border: 1px solid gray;
+background-color: rgb(224, 213, 255);}
+
+QPushButton:hover {
+background-color: rgb(234, 228, 255);}
+
+QPushButton:pressed {
+border: 2px solid gray;
+border-style:inset;
+/* 使文字有一点移动 */  
+padding-left:3px;
+padding-top:3px;
+}</string>
+              </property>
+              <property name="text">
+               <string>获取作者</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0" colspan="11">
+             <widget class="QTabWidget" name="tabWidget">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>85</height>
+               </size>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <widget class="QWidget" name="tab_url">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>60</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>85</height>
+                </size>
+               </property>
+               <attribute name="title">
+                <string>地址</string>
+               </attribute>
+               <layout class="QGridLayout" name="gridLayout_3">
+                <item row="0" column="4">
+                 <widget class="QPushButton" name="pushButton_6">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>100</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {font: 12pt &quot;楷体&quot;;
+border-radius:4px;
+/*border: 1px solid gray;*/
+/* 边框颜色 */  
+border: 1px solid gray;
+background-color: rgb(224, 213, 255);}
+
+QPushButton:hover {
+background-color: rgb(234, 228, 255);}
+
+QPushButton:pressed {
+border: 2px solid gray;
+border-style:inset;
+/* 使文字有一点移动 */  
+padding-left:3px;
+padding-top:3px;
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>保存地址</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QLabel {
+font: 15pt &quot;楷体&quot;;
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>列表地址</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="5">
+                 <widget class="QPushButton" name="pushButton_3">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>100</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {font: 12pt &quot;楷体&quot;;
+border-radius:4px;
+/*border: 1px solid gray;*/
+/* 边框颜色 */  
+border: 1px solid gray;
+background-color: rgb(224, 213, 255);}
+
+QPushButton:hover {
+background-color: rgb(234, 228, 255);}
+
+QPushButton:pressed {
+border: 2px solid gray;
+border-style:inset;
+/* 使文字有一点移动 */  
+padding-left:3px;
+padding-top:3px;
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>历史地址</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QLineEdit" name="lineEdit">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="toolTip">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;请输入带视频列表的url链接&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                  <property name="whatsThis">
+                   <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;2222&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QLineEdit{
+font: 13pt &quot;楷体&quot;;
+}</string>
+                  </property>
+                  <property name="placeholderText">
+                   <string>此处填入想要解析的视频列表</string>
+                  </property>
+                  <property name="clearButtonEnabled">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="2">
+                 <widget class="QLabel" name="label_7">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QLabel {
+font: 15pt &quot;楷体&quot;;
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>页数</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="3">
+                 <widget class="QSpinBox" name="urlPageNumspinBox">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>50</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QSpinBox{
+font: 13pt &quot;楷体&quot;;
+}</string>
+                  </property>
+                  <property name="minimum">
+                   <number>1</number>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="tab_author">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>60</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>85</height>
+                </size>
+               </property>
+               <attribute name="title">
+                <string>作者</string>
+               </attribute>
+               <layout class="QGridLayout" name="gridLayout_4">
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label_6">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QLabel {
+font: 15pt &quot;楷体&quot;;
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>作者名称</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="4">
+                 <widget class="QPushButton" name="pushButton_7">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {font: 12pt &quot;楷体&quot;;
+border-radius:4px;
+/*border: 1px solid gray;*/
+/* 边框颜色 */  
+border: 1px solid gray;
+background-color: rgb(224, 213, 255);}
+
+QPushButton:hover {
+background-color: rgb(234, 228, 255);}
+
+QPushButton:pressed {
+border: 2px solid gray;
+border-style:inset;
+/* 使文字有一点移动 */  
+padding-left:3px;
+padding-top:3px;
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>保存作者</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="2">
+                 <widget class="QLabel" name="label_8">
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QLabel {
+font: 15pt &quot;楷体&quot;;
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>页数</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QLineEdit" name="authorLineEdit">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QLineEdit{
+font: 13pt &quot;楷体&quot;;
+}</string>
+                  </property>
+                  <property name="clearButtonEnabled">
+                   <bool>true</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="5">
+                 <widget class="QPushButton" name="pushButton_5">
+                  <property name="minimumSize">
+                   <size>
+                    <width>100</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="cursor">
+                   <cursorShape>PointingHandCursor</cursorShape>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QPushButton {font: 12pt &quot;楷体&quot;;
+border-radius:4px;
+/*border: 1px solid gray;*/
+/* 边框颜色 */  
+border: 1px solid gray;
+background-color: rgb(224, 213, 255);}
+
+QPushButton:hover {
+background-color: rgb(234, 228, 255);}
+
+QPushButton:pressed {
+border: 2px solid gray;
+border-style:inset;
+/* 使文字有一点移动 */  
+padding-left:3px;
+padding-top:3px;
+}</string>
+                  </property>
+                  <property name="text">
+                   <string>历史作者</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="3">
+                 <widget class="QSpinBox" name="authorPageNumspinBox">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>16777215</width>
+                    <height>30</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">QSpinBox{
+font: 13pt &quot;楷体&quot;;
+}</string>
+                  </property>
+                  <property name="minimum">
+                   <number>1</number>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+            <item row="5" column="10">
+             <widget class="QPushButton" name="pushButton_4">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {font: 12pt &quot;楷体&quot;;
+border-radius:4px;
+/*border: 1px solid gray;*/
+/* 边框颜色 */  
+border: 1px solid gray;
+background-color: rgb(224, 213, 255);}
+
+QPushButton:hover {
+background-color: rgb(234, 228, 255);}
+
+QPushButton:pressed {
+border: 2px solid gray;
+border-style:inset;
+/* 使文字有一点移动 */  
+padding-left:3px;
+padding-top:3px;
+}</string>
+              </property>
+              <property name="text">
+               <string>选择位置</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="4">
+             <widget class="QLineEdit" name="proxyPathEdit">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit{
+font: 13pt &quot;楷体&quot;;
+}</string>
+              </property>
+              <property name="placeholderText">
+               <string>格式:ip:端口号</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="5">
+             <widget class="QCheckBox" name="isOpenAgentCheckBox">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QCheckBox {
+font: 15pt &quot;楷体&quot;;
+}</string>
+              </property>
+              <property name="text">
+               <string>开启代理</string>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="4" colspan="5">
+             <widget class="QLineEdit" name="savePathEdit">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit{
+font: 13pt &quot;楷体&quot;;
+}</string>
+              </property>
+              <property name="placeholderText">
+               <string>下载的视频存放位置 点击右侧按钮进行选择</string>
+              </property>
+              <property name="clearButtonEnabled">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="9">
+             <widget class="QCheckBox" name="authorCheckBox">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QCheckBox {
+font: 15pt &quot;楷体&quot;;
+}</string>
+              </property>
+              <property name="text">
+               <string>文件名前添加作者</string>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+              <property name="autoRepeat">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="9">
+             <widget class="QSpinBox" name="downloadTaskNumSpinBox">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QSpinBox{
+font: 13pt &quot;楷体&quot;;
+}</string>
+              </property>
+              <property name="minimum">
+               <number>1</number>
+              </property>
+              <property name="maximum">
+               <number>100</number>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="9">
+             <widget class="QLineEdit" name="passwordLineEdit">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit{
+font: 13pt &quot;楷体&quot;;
+}</string>
+              </property>
+              <property name="echoMode">
+               <enum>QLineEdit::PasswordEchoOnEdit</enum>
+              </property>
+              <property name="placeholderText">
+               <string>请输入密码</string>
+              </property>
+              <property name="clearButtonEnabled">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="8">
+             <widget class="QLabel" name="label_10">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel {
+font: 15pt &quot;楷体&quot;;
+}</string>
+              </property>
+              <property name="text">
+               <string>密码</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="7">
+             <widget class="QLineEdit" name="accountLineEdit">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit{
+font: 13pt &quot;楷体&quot;;
+}</string>
+              </property>
+              <property name="placeholderText">
+               <string>请输入帐号</string>
+              </property>
+              <property name="clearButtonEnabled">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="1">
+             <widget class="QLabel" name="label_5">
+              <property name="styleSheet">
+               <string notr="true">QLabel {
+font: 15pt &quot;楷体&quot;;
+}</string>
+              </property>
+              <property name="text">
+               <string>Cookie</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="4">
+             <widget class="QLineEdit" name="cookieEdit">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit{
+font: 13pt &quot;楷体&quot;;
+}</string>
+              </property>
+              <property name="inputMask">
+               <string/>
+              </property>
+              <property name="placeholderText">
+               <string>请输入cookie</string>
+              </property>
+              <property name="clearButtonEnabled">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="5">
+             <widget class="QLabel" name="label_9">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel {
+font: 15pt &quot;楷体&quot;;
+}</string>
+              </property>
+              <property name="text">
+               <string>帐号</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="6" column="10">
+             <widget class="QPushButton" name="loginButton">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {font: 12pt &quot;楷体&quot;;
+border-radius:4px;
+/*border: 1px solid gray;*/
+/* 边框颜色 */  
+border: 1px solid gray;
+background-color: rgb(224, 213, 255);}
+
+QPushButton:hover {
+background-color: rgb(234, 228, 255);}
+
+QPushButton:pressed {
+border: 2px solid gray;
+border-style:inset;
+/* 使文字有一点移动 */  
+padding-left:3px;
+padding-top:3px;
+}</string>
+              </property>
+              <property name="text">
+               <string>登录</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="7" colspan="2">
+             <widget class="QLabel" name="label_3">
+              <property name="styleSheet">
+               <string notr="true">QLabel {
+font: 15pt &quot;楷体&quot;;
+}</string>
+              </property>
+              <property name="text">
+               <string>同时下载任务数</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="button_box">
+           <property name="title">
+            <string>解析下载</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <widget class="QPushButton" name="pushButton">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {font: 12pt &quot;楷体&quot;;
+border-radius:4px;
+/*border: 1px solid gray;*/
+/* 边框颜色 */  
+border: 1px solid gray;
+background-color: rgb(224, 213, 255);}
+
+QPushButton:hover {
+background-color: rgb(234, 228, 255);}
+
+QPushButton:pressed {
+border: 2px solid gray;
+border-style:inset;
+/* 使文字有一点移动 */  
+padding-left:3px;
+padding-top:3px;
+}</string>
+              </property>
+              <property name="text">
+               <string>解析地址</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_8">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {font: 12pt &quot;楷体&quot;;
+border-radius:4px;
+/*border: 1px solid gray;*/
+/* 边框颜色 */  
+border: 1px solid gray;
+background-color: rgb(224, 213, 255);}
+
+QPushButton:hover {
+background-color: rgb(234, 228, 255);}
+
+QPushButton:pressed {
+border: 2px solid gray;
+border-style:inset;
+/* 使文字有一点移动 */  
+padding-left:3px;
+padding-top:3px;
+}</string>
+              </property>
+              <property name="text">
+               <string>检查状态</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="batchDownloadButton">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {font: 12pt &quot;楷体&quot;;
+border-radius:4px;
+/*border: 1px solid gray;*/
+/* 边框颜色 */  
+border: 1px solid gray;
+background-color: rgb(224, 213, 255);}
+
+QPushButton:hover {
+background-color: rgb(234, 228, 255);}
+
+QPushButton:pressed {
+border: 2px solid gray;
+border-style:inset;
+/* 使文字有一点移动 */  
+padding-left:3px;
+padding-top:3px;
+}</string>
+              </property>
+              <property name="text">
+               <string>批量下载</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="downloadOneButton">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QPushButton {font: 12pt &quot;楷体&quot;;
+border-radius:4px;
+/*border: 1px solid gray;*/
+/* 边框颜色 */  
+border: 1px solid gray;
+background-color: rgb(224, 213, 255);}
+
+QPushButton:hover {
+background-color: rgb(234, 228, 255);}
+
+QPushButton:pressed {
+border: 2px solid gray;
+border-style:inset;
+/* 使文字有一点移动 */  
+padding-left:3px;
+padding-top:3px;
+}</string>
+              </property>
+              <property name="text">
+               <string>下载单个</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="list">
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QTableView" name="tableView">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>500</height>
+            </size>
+           </property>
+           <property name="contextMenuPolicy">
+            <enum>Qt::CustomContextMenu</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QTableView{
+font: 12pt &quot;楷体&quot;;
+}</string>
+           </property>
+           <property name="selectionMode">
+            <enum>QAbstractItemView::ExtendedSelection</enum>
+           </property>
+           <property name="selectionBehavior">
+            <enum>QAbstractItemView::SelectRows</enum>
+           </property>
+           <property name="showGrid">
+            <bool>true</bool>
+           </property>
+           <property name="gridStyle">
+            <enum>Qt::SolidLine</enum>
+           </property>
+           <attribute name="horizontalHeaderCascadingSectionResizes">
+            <bool>true</bool>
+           </attribute>
+           <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+            <bool>true</bool>
+           </attribute>
+           <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+            <bool>false</bool>
+           </attribute>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="infoLabel">
+           <property name="maximumSize">
+            <size>
+             <width>2000</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+font: 12pt &quot;楷体&quot;;
+}</string>
+           </property>
+           <property name="text">
+            <string>等待</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>dialog</receiver>
+   <slot>parsing_btn_click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1145</x>
+     <y>70</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1160</x>
+     <y>-76</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_8</sender>
+   <signal>clicked()</signal>
+   <receiver>dialog</receiver>
+   <slot>check_data_status()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1168</x>
+     <y>122</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1328</x>
+     <y>121</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>batchDownloadButton</sender>
+   <signal>clicked()</signal>
+   <receiver>dialog</receiver>
+   <slot>batch_download_btn_click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1160</x>
+     <y>167</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1315</x>
+     <y>162</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>downloadOneButton</sender>
+   <signal>clicked()</signal>
+   <receiver>dialog</receiver>
+   <slot>single_download_btn_click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1162</x>
+     <y>214</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1353</x>
+     <y>223</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>dialog</receiver>
+   <slot>select_his_author_btn_click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1001</x>
+     <y>96</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1043</x>
+     <y>-59</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_7</sender>
+   <signal>clicked()</signal>
+   <receiver>dialog</receiver>
+   <slot>save_author_to_file()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>890</x>
+     <y>102</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>923</x>
+     <y>-56</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>dialog</receiver>
+   <slot>save_url_to_file()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>904</x>
+     <y>100</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>886</x>
+     <y>-100</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>dialog</receiver>
+   <slot>select_his_url_btn_click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1023</x>
+     <y>104</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1009</x>
+     <y>-84</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>dialog</receiver>
+   <slot>create_author_dir_btn()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1030</x>
+     <y>147</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1071</x>
+     <y>-84</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>dialog</receiver>
+   <slot>select_file_dir_btn()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1001</x>
+     <y>186</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1074</x>
+     <y>-95</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>loginButton</sender>
+   <signal>clicked()</signal>
+   <receiver>dialog</receiver>
+   <slot>login_btn_click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1043</x>
+     <y>224</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1034</x>
+     <y>-67</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>parsing_btn_click()</slot>
+  <slot>slot1()</slot>
+  <slot>batch_download_btn_click()</slot>
+  <slot>single_download_btn_click()</slot>
+  <slot>select_file_dir_btn()</slot>
+  <slot>create_author_dir_btn()</slot>
+  <slot>select_his_url_btn_click()</slot>
+  <slot>save_url_to_file()</slot>
+  <slot>save_author_to_file()</slot>
+  <slot>select_his_author_btn_click()</slot>
+  <slot>check_data_status()</slot>
+  <slot>login_btn_click()</slot>
+ </slots>
+</ui>

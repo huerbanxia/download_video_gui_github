@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>346</height>
+   </rect>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QListView" name="listView">
+     <property name="styleSheet">
+      <string notr="true">QListView{
+font: 12pt &quot;楷体&quot;;
+}</string>
+     </property>
+    </widget>
+   </item>
+   <item alignment="Qt::AlignHCenter|Qt::AlignTop">
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {font: 12pt &quot;楷体&quot;;
+border-radius:4px;
+/*border: 1px solid gray;*/
+/* 边框颜色 */  
+border: 1px solid gray;
+background-color: rgb(224, 213, 255);}
+
+QPushButton:hover {
+background-color: rgb(234, 228, 255);}
+
+QPushButton:pressed {
+border: 2px solid gray;
+border-style:inset;
+/* 使文字有一点移动 */  
+padding-left:3px;
+padding-top:3px;
+}</string>
+        </property>
+        <property name="text">
+         <string>删除</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {font: 12pt &quot;楷体&quot;;
+border-radius:4px;
+/*border: 1px solid gray;*/
+/* 边框颜色 */  
+border: 1px solid gray;
+background-color: rgb(224, 213, 255);}
+
+QPushButton:hover {
+background-color: rgb(234, 228, 255);}
+
+QPushButton:pressed {
+border: 2px solid gray;
+border-style:inset;
+/* 使文字有一点移动 */  
+padding-left:3px;
+padding-top:3px;
+}</string>
+        </property>
+        <property name="text">
+         <string>清空</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_5">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {font: 12pt &quot;楷体&quot;;
+border-radius:4px;
+/*border: 1px solid gray;*/
+/* 边框颜色 */  
+border: 1px solid gray;
+background-color: rgb(224, 213, 255);}
+
+QPushButton:hover {
+background-color: rgb(234, 228, 255);}
+
+QPushButton:pressed {
+border: 2px solid gray;
+border-style:inset;
+/* 使文字有一点移动 */  
+padding-left:3px;
+padding-top:3px;
+}</string>
+        </property>
+        <property name="text">
+         <string>保存</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>120</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {font: 12pt &quot;楷体&quot;;
+border-radius:4px;
+/*border: 1px solid gray;*/
+/* 边框颜色 */  
+border: 1px solid gray;
+background-color: rgb(224, 213, 255);}
+
+QPushButton:hover {
+background-color: rgb(234, 228, 255);}
+
+QPushButton:pressed {
+border: 2px solid gray;
+border-style:inset;
+/* 使文字有一点移动 */  
+padding-left:3px;
+padding-top:3px;
+}</string>
+        </property>
+        <property name="text">
+         <string>确定</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="minimumSize">
+         <size>
+          <width>100</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {font: 12pt &quot;楷体&quot;;
+border-radius:4px;
+/*border: 1px solid gray;*/
+/* 边框颜色 */  
+border: 1px solid gray;
+background-color: rgb(224, 213, 255);}
+
+QPushButton:hover {
+background-color: rgb(234, 228, 255);}
+
+QPushButton:pressed {
+border: 2px solid gray;
+border-style:inset;
+/* 使文字有一点移动 */  
+padding-left:3px;
+padding-top:3px;
+}</string>
+        </property>
+        <property name="text">
+         <string>取消</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>ok_btn_click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>581</x>
+     <y>281</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>546</x>
+     <y>174</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>cancel_btn_click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>502</x>
+     <y>306</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>506</x>
+     <y>249</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>delete_row_btn_click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>544</x>
+     <y>40</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>579</x>
+     <y>215</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>clear_rows_btn_click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>520</x>
+     <y>69</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>595</x>
+     <y>144</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>Dialog</receiver>
+   <slot>save_data_to_file_btn_click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>572</x>
+     <y>110</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>698</x>
+     <y>78</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>ok_btn_click()</slot>
+  <slot>cancel_btn_click()</slot>
+  <slot>delete_row_btn_click()</slot>
+  <slot>clear_rows_btn_click()</slot>
+  <slot>save_data_to_file_btn_click()</slot>
+ </slots>
+</ui>
